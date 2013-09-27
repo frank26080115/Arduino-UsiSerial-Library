@@ -13,6 +13,8 @@
  * only some baud rates will work, depending on CPU frequency
  * buffers are small to save memory, since this library is designed for ATtiny
  * testing was done using a 16 MHz Trinket
+ *
+ * Important note: requires Timer1 and PCINT to be occupied
  
   Copyright (c) 2013 Frank Zhao
   All rights reserved.
