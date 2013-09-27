@@ -3,9 +3,17 @@
  * UsiSerial is a simple wrapper around the code from AVR307 so that Arduino can use USI to implement a hardware serial port
  *
  * This is a simple echo example.
+ *
  * The USI class works almost exactly like HardwareSerial
  * So you can use print and println and other functions like that
  *
+ * PORTB0 is DI, thus it is RX
+ * PORTB1 is DO, thus it is TX
+ * default baud rate is 19200, which can only be changed in USI_UART_config.h
+ * only some baud rates will work, depending on CPU frequency
+ * buffers are small to save memory, since this library is designed for ATtiny
+ * testing was done using a 16 MHz Trinket
+ 
   Copyright (c) 2013 Frank Zhao
   All rights reserved.
 
